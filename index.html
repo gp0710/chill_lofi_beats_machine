@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Chill LoFi Machine Beats</title>
+    <script>
+      function play(str) {
+
+        switch (str) {
+          case "q":
+          case "Q":
+            document.getElementById('display').innerText = "steezy prime - explore";
+            break;
+
+          case "w":
+          case "W":
+            document.getElementById('display').innerText = "I feel serene";
+            break;
+
+          case "e":
+          case "E":
+            document.getElementById('display').innerText = "I can't forget you";
+            break;
+
+          case "a":
+          case "A":
+            document.getElementById('display').innerText = "Lullaby";
+            break;
+
+          case "s":
+          case "S":
+            document.getElementById('display').innerText = "Through and through";
+            break;
+
+          case "d":
+          case "D":
+            document.getElementById('display').innerText = "Already named";
+            break;
+
+          case "z":
+          case "Z":
+            document.getElementById('display').innerText = "stargazing";
+            break;
+
+          case "x":
+          case "X":
+            document.getElementById('display').innerText = "deep sleep";
+            break;
+
+          case "c":
+          case "C":
+            document.getElementById('display').innerText = "heaven";
+            break;
+
+        }
+
+        var audio = document.getElementById(str);
+        audio.play();
+
+      }
+
+        window.document.onkeyup = function(event) {
+        let keystroke = event.key;
+
+        switch (keystroke) {
+          case "q":
+          case "Q":
+            play("Q");
+            break;
+
+          case "w":
+          case "W":
+            play("W");
+            break;
+
+            case "e":
+            case "E":
+              play("E");
+              break;
+
+            case "a":
+            case "A":
+              play("A");
+              break;
+
+            case "s":
+            case "S":
+              play("S");
+              break;
+
+            case "d":
+            case "D":
+              play("D");
+              break;
+
+            case "z":
+            case "Z":
+              play("Z");
+              break;
+
+            case "x":
+            case "X":
+              play("X");
+              break;
+
+            case "c":
+            case "C":
+              play("C");
+              break;
+
+        }
+      };
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <div class="d-grid gap-2 col-6 mx-auto">
+
+      <h1 class="text-center">Chill Lofi Machine Beats</h1>
+      <div class="card py-2">
+          <div class="card-body">
+      <div class="text-center" id="display">click a button or press a key to chillout</div>
+      </div>
+      </div>
+
+      <button class="drum-pad btn btn-outline-primary" id="drum-1" onclick="play('Q')">
+        Q
+        <audio src="./clip/q-steezy-prime-explore.m4a" class="clip" id="Q">
+      </button>
+      <button class="drum-pad btn btn-outline-secondary" id="drum-2" onclick="play('W')">
+        W
+        <audio src="./clip/w-I-feel-serene.m4a" class="clip" id="W">
+      </button>
+      <button class="drum-pad btn btn-outline-success" id="drum-3" onclick="play('E')">
+        E
+        <audio src="./clip/e-I-cantforget-you.m4a" class="clip" id="E">
+      </button>
+      <button class="drum-pad btn btn-outline-danger" id="drum-4" onclick="play('A')">
+        A
+        <audio src="./clip/a-nothingtosay-Lullaby.m4a" class="clip" id="A">
+      </button>
+      <button class="drum-pad btn btn-outline-warning" id="drum-5" onclick="play('S')">
+        S
+        <audio src="./clip/s-through-and-through.m4a" class="clip" id="S">
+      </button>
+      <button class="drum-pad btn btn-outline-info" id="drum-6" onclick="play('D')">
+        D
+        <audio src="./clip/d-already-named.m4a" class="clip" id="D">
+      </button>
+      <button class="drum-pad btn btn-outline-success" id="drum-7" onclick="play('Z')">
+        Z
+        <audio src="./clip/z-Ambulo-stargazing.m4a" class="clip" id="Z">
+      </button>
+      <button class="drum-pad btn btn-outline-dark" id="drum-8" onclick="play('X')">
+        X
+        <audio src="./clip/x-Deep-Sleep.m4a" class="clip" id="X">
+      </button>
+      <button class="drum-pad btn btn-outline-warning" id="drum-9" onclick="play('C')">
+        C
+        <audio src="./clip/c-dontaskalex-heaven.m4a" class="clip" id="C">
+      </button>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>

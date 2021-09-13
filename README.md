@@ -2,6 +2,8 @@
 
 [Click here to see it live](https://gp0710.github.io/chill_lofi_beats_machine/)
 
+9/14/21 - introduced audio play/pause. To pause, simply press the same button/key again. 
+
 All credits for audio go to the original creators. I am not the creator of these beats.
 
 Direct Link to ChilledCow - lofi hip hop playlist:

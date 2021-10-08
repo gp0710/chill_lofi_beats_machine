@@ -9,3 +9,6 @@ All credits for audio go to the original creators. I am not the creator of these
 Direct Link to ChilledCow - lofi hip hop playlist:
 
 https://www.youtube.com/watch?v=-jROLLTyyGA&list=PL6NdkXsPL07KiewBDpJC1dFvxEubnNOp1&index=76&ab_channel=ChilledCow
+
+#### Created with: 
+HTML, CSS, Javascript, and Bootstrap
